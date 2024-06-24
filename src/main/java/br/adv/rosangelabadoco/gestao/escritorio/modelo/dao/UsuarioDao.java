@@ -32,7 +32,7 @@ public class UsuarioDao {
     }
 
     private String adicionar(Usuario usuario) {
-        String sql = "INSERT INTO usuario(nome, senha) VALUES (?,?)";
+        String sql = "INSERT INTO usuario(nome, senha ) VALUES (?,?)";
         
         Usuario usuarioTemp = buscarPeloUsuario(usuario.getNome());
         
@@ -72,7 +72,7 @@ public class UsuarioDao {
 
     private void preencherValoresPreparedStatement(PreparedStatement preparedStatement, Usuario usuario) throws SQLException {
         preparedStatement.setString(1,usuario.getNome());
-        preparedStatement.setString(1,usuario.getSenha());
+        preparedStatement.setString(2,usuario.getSenha());
         
         if(usuario.getId() != 0L) {
             preparedStatement.setLong(3, usuario.getId());

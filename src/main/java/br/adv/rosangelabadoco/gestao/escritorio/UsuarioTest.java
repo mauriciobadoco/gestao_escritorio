@@ -14,12 +14,13 @@ import java.time.LocalDateTime;
  */
 public class UsuarioTest {
     
-   /* public static void main(String[] args) {
-        Usuario usuario = new Usuario(Long.MIN_VALUE, nome, senha, LocalDateTime.MIN, LocalDateTime.MIN);
+    public static void main(String[] args) {
+        Usuario usuario = new Usuario(0L, "Mauricio", "123", null, null);
         
        UsuarioDao usuarioDao = new UsuarioDao();
-       String mensagem = usuarioDao.sal
+       String mensagem = usuarioDao.salvar(usuario);
+        System.out.println(mensagem);
     }
-   video 13 7:15*/
+
 
 }
