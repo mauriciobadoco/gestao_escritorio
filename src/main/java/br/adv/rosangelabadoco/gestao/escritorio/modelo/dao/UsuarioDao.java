@@ -44,7 +44,7 @@ public class UsuarioDao {
             
             preencherValoresPreparedStatement(preparedStatement, usuario);
             
-            int resultado = preparedStatement. executeUpdate();
+            int resultado = preparedStatement.executeUpdate();
             
             return resultado == 1? "Usuario adicionado com sucesso" : "Não foi possível adicionar usuario" ;
             
@@ -55,13 +55,13 @@ public class UsuarioDao {
 
         
      private String editar(Usuario usuario) {
-         String sql = "UPDATE usuario SET nome =? , senha=? , WHERE id = ?";
+         String sql = "UPDATE usuario SET nome = ? , senha = ? WHERE id = ?";
         try {
             PreparedStatement preparedStatement = conexao.obterConexao().prepareStatement(sql);
             
             preencherValoresPreparedStatement(preparedStatement, usuario);
             
-            int resultado = preparedStatement. executeUpdate();
+            int resultado = preparedStatement.executeUpdate();
             
             return resultado == 1? "Usuario editado com sucesso" : "Não foi possível editar usuario" ;
             
@@ -71,6 +71,7 @@ public class UsuarioDao {
     }
 
     private void preencherValoresPreparedStatement(PreparedStatement preparedStatement, Usuario usuario) throws SQLException {
+
         preparedStatement.setString(1,usuario.getNome());
         preparedStatement.setString(2,usuario.getSenha());
         

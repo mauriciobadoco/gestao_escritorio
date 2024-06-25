@@ -1,0 +1,12 @@
+
+b
+java:S1192]"GDefine a constant instead of duplicating this literal "Error:" 3 times.(†—Éşÿÿÿÿ
+E	java:S106]"+Replace this use of System.out by a logger.(†—Éşÿÿÿÿ
+@
+java:S3457]"%String contains no format specifiers.(†—Éşÿÿÿÿ
+E	java:S106w"+Replace this use of System.out by a logger.(†—Éşÿÿÿÿ
+@
+java:S3457w"%String contains no format specifiers.(†—Éşÿÿÿÿ
+F	java:S106‡"+Replace this use of System.out by a logger.(†—Éşÿÿÿÿ
+A
+java:S3457‡"%String contains no format specifiers.(†—Éşÿÿÿÿ
